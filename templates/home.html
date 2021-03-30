@@ -1,0 +1,16 @@
+<html>
+    <title>
+        this our test page
+    </title>
+    <head>
+        this our home templets
+        <form action="imageupload/imageprocess" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input id="image" type="file" name="image"/>
+            <input type="submit" value="submit">
+        </form>
+        <p>
+            django
+        </p>
+    </head>
+</html>
